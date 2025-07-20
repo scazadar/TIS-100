@@ -1,0 +1,51 @@
+@0
+
+
+@1
+MOV UP NIL
+B:
+MOV UP, ACC
+MOV ACC, DOWN
+MOV ACC, DOWN
+JMP B
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+SUB UP
+JLZ NEG
+SUB 10
+JLZ W2
+MOV 1, DOWN
+JRO 2
+W2:
+MOV 0, DOWN
+MOV UP, ACC
+JRO -8
+NEG:
+NEG
+JRO -9
+
+@6
+
+
+@7
+
+
+@8
+MOV UP, RIGHT
+
+@9
+MOV 0, DOWN
+B:
+MOV LEFT, DOWN
+JMP B
+
+@10
