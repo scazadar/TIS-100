@@ -1,0 +1,56 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV 17, ACC
+MOV 0, DOWN
+MOV ACC, DOWN
+SUB 1
+SAV
+MOV 30, ACC
+X:
+MOV RIGHT, DOWN
+MOV RIGHT, DOWN
+SUB 2
+JGZ X
+MOV -1, DOWN
+SWP
+JRO -11
+
+@10
+MOV 30, ACC
+X1:
+MOV 0, LEFT
+MOV 3, LEFT
+SUB 2
+JGZ X1
+MOV 30, ACC
+X2:
+MOV 3, LEFT
+MOV 0, LEFT
+SUB 2
+JGZ X2
